@@ -21,22 +21,20 @@
     </ul>
     <h2>CONTACT ME</h2>
     <div class="socials">
-        <h6 id="socials">Find me on:</h6>
-        <button class="btn"><a href="https://www.facebook.com/yalegg/" target="_blank"><i class = "fab fa-facebook"></i></a></button>
-        <button class="btn"><a href="https://www.linkedin.com/in/yale-han/" target="_blank"><i class = "fab fa-linkedin"></i></a></button>
-        <button class="btn"><a href="https://www.instagram.com/yegghan/" target="_blank"><i class = "fab fa-instagram"></i></a></button>
+        <h5 id="socials">def socials(): </h5>
+        <a href="https://www.facebook.com/yalegg/" target="_blank"><button class="btn"><i class = "fab fa-facebook"></i></button></a>
+        <a href="https://www.linkedin.com/in/yale-han/" target="_blank"><button class="btn"><i class = "fab fa-linkedin"></i></button></a>
+        <a href="https://www.instagram.com/yegghan/" target="_blank"><button class="btn"><i class = "fab fa-instagram"></i></button></a>
     </div>
+    <h5 id="socials">def contactForm(): </h5>
     <form class="contact_form">
-        <label>Name</label>
+        <label>name</label>
         <input type="text"placeholder="John Doe" name="name">
-        <br>
-        <label>Email</label>
+        <label>email</label>
         <input type="email" placeholder="johndoe@berkeley.edu" name="email">
-        <br>
-        <label>Message</label>
-        <textarea name="message" placeholder="ily yale"></textarea>
-        <br>
-        <input type="submit" value="Send" onclick="submittedMessage(this.form)">
+        <label>message</label>
+        <textarea name="message" placeholder="ily yale" rows="10"></textarea>
+        <input id="submit_btn" type="submit" value="Send" onclick="submittedMessage(this.form)">
     </form>
     <script>
         function submittedMessage(form) {
